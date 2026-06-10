@@ -1,3 +1,23 @@
 spring:
   application:
     name: jdt17.spring.currency.conversion.service
+  profiles:
+    active: dev
+
+app:
+  name: ${APP_NAME:Currency Conversion Service}
+
+currency:
+  rates:
+    - from: USD
+      to: IDR
+      rate: 16000
+    - from: IDR
+      to: USD
+      rate: 0.0000625
+    - from: SGD
+      to: IDR
+      rate: 12500
+    - from: IDR
+      to: SGD
+      rate: 0.00008
